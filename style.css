@@ -1,0 +1,379 @@
+/* <weight>: Use a value from 300 to 800 */
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing:auto;
+  /* font-weight: ; */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  padding: 0;
+}
+
+/* local shared styles */
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
+.container>*{
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+/* gray text box here */
+.bxgraytxt{
+        background-color: whitesmoke;
+    align-items: center;
+}
+.grayHeading{
+    color:darkgray;
+    text-align: center;
+    font-weight: 700;
+}
+.bxgraytxt>h1{
+    font-weight: 400;
+    text-align: center;
+}
+.bxgraytxt>a{
+    text-align: center;
+}
+
+
+/* phone text box here */
+.bxphonetxt>p{
+    text-align: left;
+}
+.bxphonetxt>h1{
+    font-weight: 400;
+}
+.grayTextParPhonetxtbx{
+    color: lightsteelblue;
+}
+
+/* phone photo here */
+.bxphone{
+    padding: 0 5vw 0 5vw;
+}
+
+/* keyboard box here */
+.orange{
+    background-color: tomato;
+}
+.orange>h1{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.orange>a{
+    text-align: center;
+    color: gold;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* game box here */
+.bxgame{
+    background-color: whitesmoke;
+}
+.bxgame>h1{
+    font-weight: 400;
+    text-align: center;
+}
+.bxgame>a{
+    text-align: center;
+    color: mediumturquoise;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* pc box here */
+.bxpc>p.grayHeading{
+    text-align: left;
+}
+.bxpc>h1{
+    font-weight: 400;
+}
+.bxpctxt>p{
+    color: darkgray;
+    font-size: large;
+    font-weight: 400;
+}
+.bxpctxt>a{
+    color: mediumturquoise;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* X(twitter) box here */
+.bxX{
+    background-color: lightskyblue;
+}
+.bxX>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: skyblue;
+    border-radius: 100%;
+    padding: 3rem 5rem;
+}
+.bxX>div>img{
+    padding: 3rem;
+    align-self: center;
+}
+.bxX>div>h1{
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    
+}
+/* ipad section here */
+.bxipad{
+    background-color: #93b6b7;
+}
+.bxipad>p{
+    background-color: tomato;
+    border-radius: .25rem;
+    padding: .5rem;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+}
+.bxipad>h1{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+/* cd box here */
+.bxcd{
+    background-color: mediumpurple;
+}
+.bxcd>div{
+    background-color: #8166b0;
+    /* opacity:30; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    border-radius: 100%;
+    padding: 1rem 1rem;
+}
+.bxcd>div>img{
+    
+    /* padding: 1rem; */
+    align-self: center;
+}
+.bxcd>div>p{
+    text-align: center;
+    /* color: white; */
+    font-weight: 700;
+}
+.popu{
+    padding: .25rem .5rem;
+    align-self: center;
+    background-color: mediumpurple;
+    border-radius: 50px;
+    width: fit-content;
+}
+.bxcd{
+    color: white;
+    text-align: center;
+}
+.bxcd>p{
+    font-size: x-large;
+}
+.bxcd>a{
+    color: black;
+    padding: 2rem 5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5rem;
+    background-color: gold;
+    width: fit-content;
+    align-self: center;
+}
+/* white box here */
+.bxwhitetxt{
+    background-color: whitesmoke;
+}
+.bxwhitetxt>a{
+    background-color: yellowgreen;
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding: .50rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+.bxwhitetxt>h1{
+    font-weight: 400;
+    text-align: center;
+}
+/* TV box here */
+.bxtv , .bxtv>h1{
+    background-color: darkslategray;
+    color: white;
+    font-weight: 400;
+}
+.bxtv>img{
+    
+    position: relative;
+    left: -5%;
+}
+
+/* *********************************************************************************************************** */
+
+/* small devices grid here */
+@media only screen and (max-width: 600px) {
+    
+    /* iphone image here */
+    .bxphone{ 
+        width: 80vw;
+    }
+    /* orange box here */
+    .orange>img{
+        width: 80vw;
+        align-self  : last baseline;
+    }
+    /* game box here */
+    .bxgame>img{
+        width: 80vw;
+    }
+    /* pc box here */
+    .bxpc>img{
+        width: 200%;
+        position: relative;
+        left: -120%;
+    }
+    .bxpctxt{
+        padding-top: 0;
+    }
+    /* ipad section here */
+    .bxipad>img{
+        position: relative;
+        width: 80vw;
+        bottom: -16%;
+        left: -4%;
+    }
+    /* TV box here */
+    .bxtv>h1{
+        font-weight: 400;
+        text-align: center;
+    }
+    .bxtv>img{
+        width: 80vw;
+    }
+    /* cd box here */
+    .bxcd>div{  
+        height: 40vh;
+    }
+    .bxcd>div>img{
+        width: 50vw;
+    }
+
+    .bxX>div{
+        height: 30vh;
+    }
+
+}
+
+/* *********************************************************************************************************** */
+@media only screen and (min-width: 601px) {
+    *{
+        width: initial;
+        height: initial;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        height: 150vh;
+        /* grid-template-areas: 'bxphonetxt bxphone bxgraytxt bxgraytxt' */
+        /* 'orange bxpc bxpctxt bxcd'
+        'bxgame bxipad bxipad bxcd'
+        'bxX bxwhitetxt bxtv bxtv'; */
+    }
+    .container>*{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bxgraytxt{
+        grid-area: bxgraytxt;
+        grid-row: 1/2;
+        grid-column: 3/5;
+    }
+    .bxphonetxt{
+        grid-area: bxphonetxt;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    .bxphone{
+        grid-area: bxphone;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .orange{
+        grid-area: orange;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .bxgame{
+        grid-area: bxgame;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .bxpc{
+        grid-area: bxpc;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .bxpctxt{
+        grid-area: bxpctxt;
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .bxX{
+        grid-area: bxX;
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .bxipad{
+        grid-area: bxipad;
+        grid-row: 3/4;
+        grid-column: 2/4;
+    }
+    .bxipad>img{
+        width: 10vw;
+        height: 10vh;
+    }
+    .bxcd{
+        grid-area: bxcd;
+        grid-row: 2/4;
+        grid-column: 4/5;
+        width: fit-content;
+    }
+    .bxcd>div>img{
+        width: 10vw;
+        height: 10vh;
+    }
+    .bxcd>div{
+        width: fit-content;
+        height: fit-content;
+        padding: 3rem;
+    }
+    .bxwhitetxt{
+        grid-area: bxwhitetxt;
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    .bxtv{
+        grid-area: bxtv;
+        grid-row: 4/5;
+        grid-column: 3/5;
+
+    }
+    .bxtv>img{
+        width: 10vw;
+        height: 20vh;
+    }
+}
