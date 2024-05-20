@@ -295,6 +295,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .bxgraytxt{
         grid-area: bxgraytxt;
@@ -312,20 +313,41 @@
         grid-row: 1/2;
         grid-column: 2/3;
     }
+    .bxphone{
+        width: 20vw;
+    }
     .orange{
         grid-area: orange;
         grid-row: 2/3;
         grid-column: 1/2;
+    }
+    .orange>img{
+        width: 20vw;
     }
     .bxgame{
         grid-area: bxgame;
         grid-row: 3/4;
         grid-column: 1/2;
     }
+    .bxgame>img{
+        width: 20vw;
+    }
     .bxpc{
         grid-area: bxpc;
         grid-row: 2/3;
         grid-column: 2/3;
+    }
+    .bxpc>img{
+        position: relative;
+        bottom: -15%;
+        width: 20vw;
+    }
+    .bxpctxt{
+        padding: 2rem;
+        width: 30vw;
+    }
+    .bxpctxt>a{
+        align-self: first baseline;
     }
     .bxpctxt{
         grid-area: bxpctxt;
